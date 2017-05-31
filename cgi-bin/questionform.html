@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta http-equiv="content-type"
+          content="text/html;charset=utf-8" />
+    <link rel="stylesheet"
+          href="/style.css" type="text/css"/>
+    <style type="text/css"><!--
+                               label {display:blck; font-weight:bold;}
+                               .error {color: #b21; font-weight:nomal:}
+                             --></style>
+  </head>
+  <body>
+    <h1 class="header">アンケート</h1>
+    $if not dateposted:
+    ${form.display(values, errors)}
+    $endif
+    $if dateposted:
+    <p>アンケートを登録しました</p>
+    $endif
+  </body>
+</html>
